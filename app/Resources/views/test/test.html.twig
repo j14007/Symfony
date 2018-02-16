@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+{% block title %}テスト{% endblock %}
+{% block body %}
+    <ul>
+        {% for array in arrays %}
+            <li>{{ array }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

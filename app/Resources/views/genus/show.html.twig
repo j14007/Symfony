@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Symfonyフレームワーク{% endblock %}
+
+{% block body %}
+    <ul>
+        {% for array in arrays %}
+            <li>{{ array }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+{% block form %}
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+{% endblock %}
